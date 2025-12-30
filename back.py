@@ -12,7 +12,7 @@ def load_document(path):
 
 # ---------------- Parse Q&A pairs ----------------
 def parse_qa_pairs(text):
-    """Extract Question-Answer pairs from knowledge.txt"""
+    """Extract Question-Answer pairs from football_fitness_recovery.txt"""
     qa_pairs = []
     pattern = re.compile(
         r'Question:\s*(.+?)\s*Answer:\s*(.+?)(?=\s*Question:|$)',
@@ -134,7 +134,7 @@ def exact_match(question, qa_pairs, threshold=0.9):
 
 # ---------------- Main ----------------
 if __name__ == "__main__":
-    doc_path = "data/knowledge.txt"
+    doc_path = "data/football_fitness_recovery.txt"
     print("="*70)
     print("FAQ CHATBOT - Loading...")
     print("="*70)
